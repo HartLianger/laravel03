@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/coba', function () {
-    return view('coba');
+    return view('elektronik.coba');
 });
