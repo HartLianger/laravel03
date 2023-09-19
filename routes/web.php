@@ -38,7 +38,16 @@ use Illuminate\Support\Facades\Route;
 //});
 
 
+//route::get('/coba', function(){
+//    $arrcoba3 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
+//return view ('elektronik.coba3',['coba3' => $arrcoba3]);
+//});
+
+//route::get('/coba',function (){
+//    return view ('elektronik.cobaw')->with('barang01','TV');
+//});
+
 route::get('/coba', function(){
-    $arrcoba3 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
-return view ('elektronik.coba3',['coba3' => $arrcoba3]);
-});
+        $arrcobawf = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2","gerwf"];
+    return view ('elektronik.cobawf')->with('cobawf', $arrcobawf);
+    });
