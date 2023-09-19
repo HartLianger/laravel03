@@ -32,7 +32,13 @@ use Illuminate\Support\Facades\Route;
 //return view('elektronik.coba', $arrcoba);
 //});
 
+//route::get('/coba', function(){
+//    $arrcoba2 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
+//return view ('elektronik.coba2',['coba2' => $arrcoba2]);
+//});
+
+
 route::get('/coba', function(){
-    $arrcoba2 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
-return view ('elektronik.coba2',['coba2' => $arrcoba2]);
+    $arrcoba3 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
+return view ('elektronik.coba3',['coba3' => $arrcoba3]);
 });
