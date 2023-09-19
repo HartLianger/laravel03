@@ -9,9 +9,9 @@
 <body>
     <h1>Daftar Barang</h1>
     <o1>
-        <li><?php echo $coba01; ?></li>
-        <li><?php echo $coba02; ?></li>
-        <li><?php echo $coba03; ?></li>
+        <li><?php echo $coba2[0]; ?></li>
+        <li><?php echo $coba2[1]; ?></li>
+        <li><?php echo $coba2[2]; ?></li>
         <li>Laptop</li>
         <li>HP</li>
         <li>TV</li>

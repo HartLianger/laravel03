@@ -13,6 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/coba', function () {
-    return view('elektronik.coba',["coba01" => "Speaker"]);
+//Route::get('/coba', function () {
+//    return view('elektronik.coba',
+//    [
+//        "coba01" => "Speaker",
+//        "coba02" => "AC",
+//        "coba03" => "Mesin Cuci",
+//    ]);
+//});
+
+//Route::get('/coba', function () {
+//
+//    $arrcoba = [
+//        "coba01" => "Speaker",
+//        "coba02" => "AC",
+//        "coba03" => "Mesin Cuci",
+//    ];
+//return view('elektronik.coba', $arrcoba);
+//});
+
+route::get('/coba', function(){
+    $arrcoba2 = ["Speaker2","AC2","Mesin Cuci2","jam2","cahrger2"];
+return view ('elektronik.coba2',['coba2' => $arrcoba2]);
 });
