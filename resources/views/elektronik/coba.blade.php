@@ -9,6 +9,7 @@
 <body>
     <h1>Daftar Barang</h1>
     <o1>
+        <li><?php echo $coba01; ?></li>
         <li>Laptop</li>
         <li>HP</li>
         <li>TV</li>

@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/coba', function () {
-    return view('elektronik.coba');
+    return view('elektronik.coba',["coba01" => "Speaker"]);
 });
