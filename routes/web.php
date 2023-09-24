@@ -52,7 +52,13 @@ use Illuminate\Support\Facades\Route;
 //     return view ('elektronik.cobawf')->with('cobawf', $arrcobawf);
 //     });
 
+// Route::get('/barang', function () {
+//     $arrbarang = ["AC","TV","Radio", "HP"];
+//     return view('elektronik.barang',['barang' => $arrbarang]);
+// });
+
 Route::get('/barang', function () {
-    $arrbarang = ["AC","TV","Radio", "HP"];
-    return view('elektronik.barang',['barang' => $arrbarang]);
+    $nama = ' TV 21 Inch';
+    $harga = '3000001';
+    return view('elektronik2.barang',compact('nama','harga'));
 });
