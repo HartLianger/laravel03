@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <title>Daftar Barang</title>
-    <h1>Daftar Barang</h1>
 </head>
-
 <body>
-
-    <ul>
+    <h1>Daftar Barang</h1>
+    <o1>
         <?php
-        foreach ($arrcobawf as $barang) {
-            echo "<li> $barang </li>";
-          }
+            foreach ($barang as $nama) {
+                echo "<li> $nama</li>";
+            }
         ?>
-    </ul>
+    </o1>
     <div>
         Copyright  ©  <?php echo date("Y"); ?> Robby
     </div>
