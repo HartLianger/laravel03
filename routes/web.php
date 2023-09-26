@@ -59,6 +59,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/barang', function () {
     $nama = ' TV 21 Inch';
-    $harga = '-2000001';
-    return view('elektronik2.barang',compact('nama','harga'));
+    $harga = '1000001';
+    return view('elektronik3.barang',compact('nama','harga'));
 });
