@@ -65,7 +65,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/barang', function () {
     $nama = 'Laptop';
-    $nilai = [0,1000,2000,3000,4000];
+    $harga = [0,1000,2000,3000,4000];
 
-    return view('elektronik4.barang',compact('nama','nilai'));
+    return view('elektronik4.barang',compact('nama','harga'));
 });
