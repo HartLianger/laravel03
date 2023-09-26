@@ -8,31 +8,17 @@
   <title>Data Barang</title>
 </head>
 <body>
-  {{-- <div class="container text-center mt-3 pt-3 bg-white">
-    <h1 class="bg-dark px-3 py-1 text-white d-inline-block">
-      <?php echo $nama ?>
-    </h1>
-    <h1 class="bg-dark px-3 py-1 text-white d-inline-block">
-      <?php echo $harga ?>
-    </h1>
-  </div> --}}
-
   <div class="container text-center mt-3 pt-3 bg-white">
     <h1 class="bg-dark px-3 py-1 text-white d-inline-block">{{ $nama }}</h1>
     <h1 class="bg-dark px-3 py-1 text-white d-inline-block">{{ $harga }}</h1>
     <br>
-    <div class="alert alert-secondary d-inline-block">
-      <?php
-      if (($harga >= 0) and ($harga <= 2000000))
-      {
-        echo "Murah";
-      }
-      else if (($harga > 2000000) and ($harga <= 3000000))
-      {
-        echo "Mahal";
-      }
-      ?>
-    </div>
+    @if (($harga >= 1000000) and ($harga < 2000000))
+      <div class="alert alert-danger d-inline-block">Murah</div>
+    @elseif (($harga >= 2000000) and ($harga <= 3000000))
+      <div class="alert alert-success d-inline-block">Mahal</div>
+    @else
+      <div class="alert alert-dark d-inline-block">harga tidak masuk akal</div>
+    @endif
   </div>
 </body>
 </html>
