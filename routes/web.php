@@ -57,8 +57,15 @@ use Illuminate\Support\Facades\Route;
 //     return view('elektronik.barang',['barang' => $arrbarang]);
 // });
 
+// Route::get('/barang', function () {
+//     $nama = ' TV 21 Inch';
+//     $harga = '1000001';
+//     return view('elektronik4.barang',compact('nama','harga'));
+// });
+
 Route::get('/barang', function () {
-    $nama = ' TV 21 Inch';
-    $harga = '1000001';
-    return view('elektronik3.barang',compact('nama','harga'));
+    $nama = 'Laptop';
+    $nilai = [0,1000,2000,3000,4000];
+
+    return view('elektronik4.barang',compact('nama','nilai'));
 });
