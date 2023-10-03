@@ -59,13 +59,181 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/barang', function () {
 //     $nama = ' TV 21 Inch';
-//     $harga = '1000001';
-//     return view('elektronik4.barang',compact('nama','harga'));
+//     $harga = '6000001';
+//     return view('elektronik2.barang',compact('nama','harga'));
 // });
 
-Route::get('/barang', function () {
-    $nama = 'Laptop';
-    $harga = [0,1000,2000,3000,4000];
+// Route::get('/barang', function () {
+//     $nama = 'Laptop';
+//     $harga = [80,64,30,10,90,101];
 
-    return view('elektronik4.barang',compact('nama','harga'));
+//     return view('elektronik6.barang',compact('nama','harga'));
+// });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+//                      "Lisa Permata"];
+
+//     return view('jajal.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+// });
+
+// Route::get('dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+//                  "Dr. Syahrial, M.Kom."];
+
+//     return view('jajal.dosen')->with('dosen', $arrDosen);
+// });
+
+// Route::get('gallery', function () {
+//     return view('jajal.gallery');
+// });
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+//                      "Lisa Permata"];
+
+//     return view('coba2.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+// });
+
+// Route::get('dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+//                  "Dr. Syahrial, M.Kom."];
+
+//     return view('coba2.dosen')->with('dosen', $arrDosen);
+// });
+
+// Route::get('gallery', function () {
+//     return view('coba2.gallery');
+// });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+//                      "Lisa Permata"];
+
+//     return view('layout_extends.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+// });
+
+// Route::get('dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+//                  "Dr. Syahrial, M.Kom."];
+
+//     return view('layout_extends.dosen')->with('dosen', $arrDosen);
+// });
+
+// Route::get('gallery', function () {
+//     return view('layout_extends.gallery');
+// });
+
+Route::get('/', function () {
+    return view('welcome');
 });
+
+Route::get('/mahasiswa', function () {
+    $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+                     "Lisa Permata"];
+
+    return view('layout_extends.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+});
+
+// Route::get('dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+//                  "Dr. Syahrial, M.Kom."];
+
+//     return view('layout_extends.dosen')->with('dosen', $arrDosen);
+// });
+
+// Route::get('layout_extends.gallery', function () {
+//     return view('layout_extends.gallery');
+// });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+//                      "Lisa Permata"];
+
+//     return view('CnS.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+// });
+
+// Route::get('dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+//                  "Dr. Syahrial, M.Kom."];
+
+//     return view('CnS.dosen')->with('dosen', $arrDosen);
+// });
+
+// Route::get('gallery', function () {
+//     return view('CnS.gallery');
+// });
+
+// Route::get('admin', function () {
+//     return view('CnS.admin');
+// });
+
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+//                      "Lisa Permata"];
+//     return view('name_route.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+// })->name('mahasiswa');
+
+// Route::get('/dosen', function () {
+//     $arrDosen = ["Maya Fitrianti, M.M.", "Prof. Silvia Nst, M.Farm.",
+//                  "Dr. Umar Agustinus", "Dr. Syahrial, M.Kom."];
+//     return view('name_route.dosen')->with('dosen', $arrDosen);
+// })->name('dosen');
+
+// Route::get('/gallery', function () {
+//     return view('name_route.gallery');
+// })->name('gallery');
+
+// Route::get('admin', function () {
+//   return view('name_route.admin');
+// });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/mahasiswa', function () {
+    $arrMahasiswa = ["Risa Lestari","Rudi Hermawan","Bambang Kusumo",
+                     "Lisa Permata"];
+
+    return view('name_route_par.mahasiswa')->with('mahasiswa', $arrMahasiswa);
+})->name('mahasiswa');
+
+Route::get('dosen', function () {
+    $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.","Dr. Umar Agustinus",
+                 "Dr. Syahrial, M.Kom."];
+
+    return view('name_route_par.dosen')->with('dosen', $arrDosen);
+})->name('dosen');
+
+Route::get('gallery', function () {
+    return view('name_route_par.gallery');
+})->name('gallery');
+
+Route::get('informasi/{fakultas}/{jurusan}', function ($fakultas, $jurusan) {
+    $data = [$fakultas, $jurusan];
+    return view('name_route_par.informasi')->with('data', $data);
+})->name('info');
